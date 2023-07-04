@@ -1,0 +1,33 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+button {
+    background-color: rgb(58, 241, 12);
+    color: #faf6f6;
+    padding: 10px 20px;
+    border: 5px solid rgb(228, 225, 225);
+    border-radius: 10px;
+    transition: all 500ms;
+
+}
+
+.loop{
+    animation: loop 100ms infinite;
+}
+
+button:hover {
+    background-color: black;
+    color: #220cec;
+    transform: rotate(360deg);
+    box-shadow: 10px 10px 20px blue;
+}
+
+@keyframes loop {
+    to{
+        transform: rotate(360deg);
+    }
+}
